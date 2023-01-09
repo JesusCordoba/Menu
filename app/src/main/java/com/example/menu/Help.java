@@ -20,6 +20,8 @@ public class Help extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
+        // Ocultar para ir a la misma pagina que estas
+        menu.findItem(R.id.help).setVisible(false);
         return true;
     }
 
